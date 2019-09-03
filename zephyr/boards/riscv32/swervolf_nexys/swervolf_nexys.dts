@@ -1,0 +1,25 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
+/dts-v1/;
+
+#include <riscv32-swerv.dtsi>
+
+/ {
+	model = "SweRv olf_nexys";
+	compatible = "swerv,olf_nexys";
+	aliases {
+	};
+
+	chosen {
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+	};
+};
+
+
+&uart0 {
+	status = "ok";
+	current-speed = <7200>;
+	clock-frequency = <25000000>;
+};
+
