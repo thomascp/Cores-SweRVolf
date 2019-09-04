@@ -57,12 +57,4 @@ config RISCV_ROM_SIZE
 	hex
 	default 0x0
 
-config RISCV_RAM_BASE_ADDR
-        hex
-        default 0x00000000
-
-config RISCV_RAM_SIZE
-        hex
-        default 0x00800000
-
 endif # SOC_SERIES_RISCV32_SWERV

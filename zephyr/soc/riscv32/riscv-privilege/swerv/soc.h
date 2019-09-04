@@ -8,6 +8,7 @@
 #define __RISCV32_SWERVOLF_SOC_H_
 
 #include <soc_common.h>
+#include <generated_dts_board.h>
 
 /* Following defines are needed for LED support until there is
    devices trees are in place. LED controller is defined in soc.c */
@@ -22,7 +23,7 @@
 #define SERV_TIMER_IRQ              7
 
 /* lib-c hooks required RAM defined variables */
-#define RISCV_RAM_BASE              CONFIG_RISCV_RAM_BASE_ADDR
-#define RISCV_RAM_SIZE              CONFIG_RISCV_RAM_SIZE
+#define RISCV_RAM_BASE               DT_SRAM_BASE_ADDRESS
+#define RISCV_RAM_SIZE               KB(DT_SRAM_SIZE)
 
 #endif /* __RISCV32_SERV_SOC_H_ */
