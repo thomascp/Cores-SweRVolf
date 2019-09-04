@@ -10,17 +10,11 @@
 #include <soc_common.h>
 #include <generated_dts_board.h>
 
-/* Following defines are needed for LED support until there is
-   devices trees are in place. LED controller is defined in soc.c */
-#define LED0_GPIO_CONTROLLER "LED0"
-#define LED0_GPIO_PIN 0
+#define LED0_GPIO_CONTROLLER         "LED0"
+#define LED0_GPIO_PIN                0
 
-#define RISCV_MTIME_BASE    0x80001020
-#define RISCV_MTIMECMP_BASE 0x80001028
-
-/* Timer configuration */
-#define SERV_TIMER_BASE             0x80001018
-#define SERV_TIMER_IRQ              7
+#define RISCV_MTIME_BASE             0x80001020
+#define RISCV_MTIMECMP_BASE          0x80001028
 
 /* lib-c hooks required RAM defined variables */
 #define RISCV_RAM_BASE               DT_SRAM_BASE_ADDRESS
