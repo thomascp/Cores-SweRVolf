@@ -5,8 +5,8 @@
 #include <riscv32-swerv.dtsi>
 
 / {
-	model = "SweRv olf_nexys";
-	compatible = "swerv,olf_nexys";
+	model = "ChipsAlliance Swervolf-Nexys";
+	compatible = "ChipsAlliance,Swervolf-Nexys";
 	aliases {
 	};
 

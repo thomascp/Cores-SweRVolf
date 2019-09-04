@@ -5,14 +5,14 @@
 / {
 	#address-cells = <1>;
 	#size-cells = <1>;
-	compatible = "SweRv,dev";
-	model = "SweRv";
+	compatible = "ChipsAlliance,SweRVolf-dev";
+	model = "ChipsAlliance,SweRVolf";
 	cpus {
 		#address-cells = <1>;
 		#size-cells = <0>;
 		cpu@0 {
 			clock-frequency = <0>;
-			compatible = "riscv";
+			compatible = "ChipsAlliance,SweRV-EH1-v1.2", "riscv";
 			device_type = "cpu";
 			reg = <0>;
 			riscv,isa = "rv32imac";
@@ -28,8 +28,9 @@
 	soc {
 		#address-cells = <1>;
 		#size-cells = <1>;
-		compatible = "SweRv,soc", "simple-bus";
+		compatible = "ChipsAlliance,SweRVolf-soc", "simple-bus";
 		ranges;
+
 		uart0: uart@80002000 {
 			compatible = "ns16550";
 			clock-frequency = <25000000>;
