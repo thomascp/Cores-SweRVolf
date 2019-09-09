@@ -101,7 +101,7 @@ If the memory test is successful, one LED should light up on the board
 3. Build the code with
     mkdir build
     cd build
-    cmake -GNinja -DBOARD=swervolf_nexys -DBOARD_ROOT=$CORES_ROOT/swervolf/zephyr -DSOC_ROOT=$CORES_ROOT/swervolf/zephyr ..
+    cmake -GNinja -DBOARD=swervolf_nexys -DBOARD_ROOT=$CORES_ROOT/swervolf/zephyr -DSOC_ROOT=$CORES_ROOT/swervolf/zephyr -DDTS_ROOT=$CORES_ROOT/swervolf/zephyr ..
     ninja
 4. There will now be a binary file in `zephyr/zephyr.bin`
 5. Enter the FuseSoC workspace directory and convert the binary file into a suitable verilog hex file with
